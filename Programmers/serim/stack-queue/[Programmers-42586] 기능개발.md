@@ -1,6 +1,6 @@
 ## 42578 위장
 
-Queue 자료구조 - collections.deque 모듈 / deque 자료형 사 
+Queue 자료구조 - collections.deque 모듈 / deque 자료형 사용
 
 ***
 
