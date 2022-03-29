@@ -1,5 +1,8 @@
 ##  다리를 지나는 트럭<br/><br/>
 
+### Problem 
+https://programmers.co.kr/learn/courses/30/lessons/42583
+
 ### Solution
 
 Step 1. 다리가 가용할 수 있는 트럭 갯수 만큼의 크기의 zero 배열(다리) 을 만들었습니다.<br/><br/>
