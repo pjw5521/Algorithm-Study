@@ -5,9 +5,9 @@ https://programmers.co.kr/learn/courses/30/lessons/49189
 
 ### Solution
 
-Step 1. bfs를 이용하여 풀었습니다.<br/><br/>
+Step 1. bfs를 이용하여 풀었습니다.
 - 여기서 중요한것은 distance(방문한 노드 간선 수)를 구하기 위해서 맨 처음 -1을 넣어서 시작해야 합니다.
-- https://www.youtube.com/watch?v=7C9RgOcvkvo 
+- https://www.youtube.com/watch?v=7C9RgOcvkvo <br/><br/>
 
 Step 2. node를 인접리스트로 생성합니다.그 후 bfs를 통해 노드 1에서 시작 했을 때 각 노드별로 거리를 계산한 distance를 반환합니다. <br/><br/>
 
