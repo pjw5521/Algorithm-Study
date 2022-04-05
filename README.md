@@ -16,7 +16,7 @@
    3. 코드에 대한 리뷰는 정말 자유롭게 뭐든지 ! 
    4. 스터디 전까지 4문제 모두 꼭 풀어와야 합니다. 
 2. 깃허브 활용해서 Pull Request로 코드 리뷰 진행합니다. 
-   1. 금요일 낮 12시까지 각자 맡은 문제와 알고리즘에 대한 README를 **반드시** commit 합니다.
+   1. 토요일 낮 12시까지 각자 맡은 문제와 알고리즘에 대한 README를 **반드시** commit 합니다.
    3. 서로에 대한 코드 리뷰는 일요일 스터디 전까지 완료합니다. 
    4. 반드시 코드 리뷰 후에 main branch로 merge.
    5. 기본적으로 올릴 때는 각자 이름으로 된 branch에 올림.
@@ -71,29 +71,20 @@
 
 #### 1차 : 코딩테스트 고득점 Kit (프로그래머스)
 
-| **주차** | **폴더명**          | **문제 1**                                                   | **문제 2**                                                   | **문제 3**                | **문제 4**    | **설명**                               | **진행 현황** |
+| **주차** | **폴더명**          | **[pjw5521](https://github.com/pjw5521)**                                                   | **[serim53](https://github.com/serim53)**                                                   | **[sunghyunzzzzang](https://github.com/sunghyunzzzzang)**                | **[Lee-JaeHyuk](https://github.com/Lee-JaeHyuk)**    | **개념 설명**                               | **진행 날짜** |
 | -------- | --------------- | -------------------------------------------------- | --------------------------------------------------| -------------------------------------------------- |  -------------------------------------------------- | -------------------------------------------------- |  ------------- |
-| 1주차    | hash           |[완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)       |             [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)   | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)  | [@pjw5521](https://github.com/pjw5521)
-| 2주차    | stack/queue      | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) |[다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) |    [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)                                                        |  |
-| 3주차    | heap     | |                                                              | |
-| 4주차    | sorting             |  |
-| 5주차    |  brute_force              |    |
-| 6주차    | greedy            |   |
-| 7주차    |dynamic_programming      | |                                                              |  |
-| 8주차    | dfs/bfs |    |
-| 9주차    |   binary_search              |  |
-| 10주차   | graph               |   |
+| 1주차    | hash           |[전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)      |          [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)       | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)  | [@pjw5521](https://github.com/pjw5521) | 3월 27일
+| 2주차    | stack/queue & level3    | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587), [추석트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)| [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586), [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895)  | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584), [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238)                       |  [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583), [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189)     | [@pjw5521](https://github.com/pjw5521) | 4월 3일(비대면)
+| 3주차    | heap & sorting & level3     | [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626), [디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627)|   [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746), [다단계 칫솔 판매](https://programmers.co.kr/learn/courses/30/lessons/77486)  | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747), [순위](https://programmers.co.kr/learn/courses/30/lessons/49191) |[이중우선순위큐](https://programmers.co.kr/learn/courses/30/lessons/42628),[정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) || 4월 9일
+| 4주차    | brute_force       |  |
+| 5주차    |   greedy       |    |
+| 6주차    |   dynamic_programming        |   |
+| 7주차    | dfs/bfs   | |                                                              |  |
+| 8주차    |   binary_search  |    |
+| 9주차    |  graph           |  |
 
 #### 2차 : 추가 알고리즘 공부 (백준)
 
 #### 3차 : 삼성 기출 (백준 sw 역량 테스트 기출 45문제)
 
-## CS 스터디 규칙 
 
-#### 진행 방식
-https://github.com/JaeYeopHan/Interview_Question_for_Beginner 활용 
-
-
-## 일정표 
-| **주차** | **파트**   | **진행 현황** |
-| -------- | ------ | -------- |
