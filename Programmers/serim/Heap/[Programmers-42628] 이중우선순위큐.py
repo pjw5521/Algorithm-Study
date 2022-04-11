@@ -1,20 +1,17 @@
-import heapq
+def solution(operations):
+    heap = []
+    for ope in operations:
+        command, value = ope.split()[0], int(ope.split()[1])
+        if command == 'I':
+            heap.append(value)
+        elif command == 'D' and len(heap) != 0:
+            if value < 0:
+                heap.pop(heap.index(min(heap)))
+            else:
+                heap.pop(heap.index(max(heap)))
 
-
-def solution(scoville, K):
-    answer = 0
-    heapq.heapify(scoville)
-    while len(scoville) >= 2:
-        # 가장 작은 수
-        min1 = heapq.heappop(scoville)
-        if min1 >= K:
-            return answer
-        else:
-            # 두번째로 작은 수
-            min2 = heapq.heappop(scoville)
-            heapq.heappush(scoville, min1 + min2 * 2)
-            answer += 1
-    if scoville[0] > K:
-        return answer
+    if len(heap) == 0:
+        return [0, 0]
     else:
-        return -1
+        return [max(heap), min(heap)]
+    
