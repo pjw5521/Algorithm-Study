@@ -20,6 +20,7 @@ def solution(m, n, puddles):
                 maps[i][j] = maps[i][j-1] + maps[i-1][j]
     return maps[n-1][m-1] % 1000000007
 
+# 성공한 경우
 def solution(m, n, puddles):
 
     maps = [[0] * (m + 1) for _ in range(n + 1)]
