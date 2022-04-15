@@ -39,13 +39,16 @@ Step 2. [False] * n 을 만들어 방문한 노드르 True 로 만든다.
 
 ### Solution
 
-Step1. 
+Step1. BFS의 개념을 이용해서 풀었다. 
 
-Step2. 
+Step2. 우선 stack의 begin 부터 시작해서 글자가 한 글자 다른 글자를 찾아낸다. 
 
-Step3. 
+Step3. 다음 글자르 찾기 위해 넘어갈ㄸ count 를 증가신다. 이 의미는 트리러 생각했을때 depth 가 1 증가 한 것이다.
 
-Step4. 
+Step4. 찾은 글자르 다시 stack 에 넣고 반복하면 target 값과 같으면 count 한 것을 반환한다.
+
+<img width="298" alt="스크린샷 2022-04-16 오전 1 16 17" src="https://user-images.githubusercontent.com/60414900/163594832-a4fdac3d-c9e9-4c7d-9a33-ee4700813218.png">
+
 
 <br/>
 
