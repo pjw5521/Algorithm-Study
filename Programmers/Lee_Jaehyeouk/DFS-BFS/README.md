@@ -12,7 +12,7 @@ Step 2. 문제에서는 더하기, 뺄셈만 가능하기 때문에 고려해야
 
 Step 3. numbers의 숫자르 하나씩 뽑아 계산이 가능한 모든 경우의 수를 순차적으로 리스트에 추가한다.
 
-Step 4. 완서 된 리스트에서 target 과 비교하여 count 한다.
+Step 4. 완성 된 리스트에서 target 과 비교하여 count 한다.
 
 <br/>
 
@@ -58,13 +58,25 @@ Step4. 찾은 글자르 다시 stack 에 넣고 반복하면 target 값과 같�
 
 ### Solution
 
-Step1. 
+Step1. defaultdic을 이용해서 풀었다.
 
-Step2. 
+Step2. 우선 ticket을 각 출발을 key 로하여 dictionary를 생성 후 조건에 맞게 정렬한다.
 
-Step3. 
+Step3. 시작은 무조건 ICN이기 때문에 stack 이라는 리스트에 넣고 시작한다.
 
-Step4. 
+Step4. 반복문을 돌며 stack의 맨 상단에 위치한 값을 tmp에 저장하여 해당 tmp를 key 값으로 갖는 value 가 존재하면 stack에 없으면 answer에 집어넣는다.
+- dfs의 개념이다.
+
+Step5. 위 문제를 예시로 들며 진행해보겠다.
+
+세팅 완료  
+<img width="402" alt="스크린샷 2022-04-16 오후 12 03 40" src="https://user-images.githubusercontent.com/60414900/163659085-d7653ac8-cc54-42c9-b842-290807bcd10a.png">
+
+
+반복문 진행  
+
+<img width="523" alt="스크린샷 2022-04-16 오후 12 03 22" src="https://user-images.githubusercontent.com/60414900/163659074-8425e7d4-48d1-40b1-9dd4-6262580a1c28.png">
+
 
 
 
