@@ -18,6 +18,7 @@ def solution(distance, rocks, n):
                 cur_stone = rock
             if del_stones > n:  # 제거된 돌이 문제 조건 보다 크면 for문을 나온다
                 break
+            print(rock, cur_stone, mid)
         if del_stones > n:  # 제거된 돌이 너무 많으면 가정한 값이 큰 것이므로 범위를 작은 쪽으로 줄인다.
             end = mid - 1
         else:  # 반대라면 큰 쪽으로 줄인다.
@@ -30,4 +31,7 @@ distance = 25
 rocks = [2, 14, 11, 21, 17]
 n = 2
 
-print(solution(distance,rocks,n))
+rocks2 = [18,21,23]
+
+#print(solution(distance,rocks,n))
+print(solution(distance,rocks2,1))
