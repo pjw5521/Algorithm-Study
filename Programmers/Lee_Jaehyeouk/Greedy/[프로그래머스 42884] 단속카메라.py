@@ -3,7 +3,8 @@
 def solution(routes):
     answer = 1
     routes.sort(key=lambda x: x[0], reverse=True)
-    print(routes)
+    rx = routes.sort(key=lambda  x: x[1])
+    print(rx)
 
     now = routes[0][0]
     #print(routes[1:])
