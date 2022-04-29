@@ -1,7 +1,5 @@
 import collections
 
-import collections
-
 
 def solution(arrows):
     answer = 0
@@ -21,12 +19,15 @@ def solution(arrows):
         for _ in range(2):
             next = (now[0] + move[i][0], now[1] + move[i][1])
             queue.append(next)
+
             now = next
+
     now = queue.popleft()
     visited[now] = 1
 
     while queue:
         next = queue.popleft()
+
         # 이미 방문한 노드(visited[x]==1)인 경우
         if visited[next] == 1:
             # 해당 경로로 처음 들어온 경우인 경우 answer++
@@ -43,3 +44,6 @@ def solution(arrows):
         now = next
 
     return answer
+
+arrows = [6, 6, 6, 4, 4, 4, 2, 2, 2, 0, 0, 0, 1, 6, 5, 5, 3, 6, 0]
+print(solution(arrows))

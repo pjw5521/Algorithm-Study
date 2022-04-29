@@ -1,4 +1,4 @@
-# BFS-DFS <br/><br/>
+# Greedy <br/><br/>
 
 ## Problem1
 
