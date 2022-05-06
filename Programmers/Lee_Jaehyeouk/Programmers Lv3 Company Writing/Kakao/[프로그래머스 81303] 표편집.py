@@ -1,4 +1,4 @@
-# 효울성 리스트 성애자는 풀기 힘들다.
+# 효울성 리스트 성애자는 힘든다.
 
 def solution(n, k, cmd):
     answer = ['O' for i in range(n)]
