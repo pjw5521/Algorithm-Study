@@ -35,6 +35,45 @@ Step 2. 연결리스트를 이용해서 진행했다. 그러기 위해서 간단
 
 Step 3. 리스트의 경우 삽입,삭제가 O(N)이지만 연결리스트의 경우 O(1) 이다.
 
+<br/>
+
+## Problem3
+
+문제: 보석쇼핑 (https://programmers.co.kr/learn/courses/30/lessons/67258)
+
+### Solution
+
+Step 1. 인덱싱으로 접근하였다가 효율성 부분에서 틀렸고, 또한 예외 케이스를 계속 틀렸다.
+
+Step 2. 잦은 검색을 이용할때는 리스트보다 Dict를 이용해야한다. (해싱을 사용하기 때문)
+
+<img width="366" alt="스크린샷 2022-05-07 오전 1 06 44" src="https://user-images.githubusercontent.com/60414900/167170595-a9650fea-1d9e-44b0-be34-a8d21d014685.png">
+
+Step 3. Set을 이용하여 우선 정답을 구했고 start와 end index를 사용하여 끝 값을 찾았다.
+
+Step 4. 이후 end index를 높여가며 계속해서 보석의 갯수가 같은지 비교하였다.
+
+Step 5. 문제의 예외케이스는 보석의 종류가 다 존재하는 구간이 2개일때 이다. 이때 만약 뒷 구간이 더 짧은 구간일때를 생각하지 못했다.
+
+Step 6. 즉 최소 길이 구간을 저장해놓고 end index가 움직였을때 사라지면 start index를 올려주고 이것을 반복해서 끝가지 간다.
+
+
+<br/>
+
+## Problem4
+
+문제: 불량 사용자 (https://programmers.co.kr/learn/courses/30/lessons/64064)
+
+### Solution
+
+Step 1. 경우의 수 문제이다.
+
+Step 2. 처음에 중복을 제거하지 않아서 계속 오류가 생겼고 꼭 중복을 제거해 줘야 한다.
+
+<img width="309" alt="스크린샷 2022-05-07 오전 1 09 54" src="https://user-images.githubusercontent.com/60414900/167171077-94fe12cc-82b6-4b43-bb3f-529999ac2721.png">
+
+Step 3. 즉 불량 사용자가 될 수 있는 경우의 수를 구하는 것이기 때문에 (응모자아이디) C (불량 사용자 아이디) 중 가능한 것을 고르면 된다.
+
 
 
 
