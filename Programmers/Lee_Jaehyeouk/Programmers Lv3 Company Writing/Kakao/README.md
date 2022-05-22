@@ -74,6 +74,31 @@ Step 2. 처음에 중복을 제거하지 않아서 계속 오류가 생겼고 �
 
 Step 3. 즉 불량 사용자가 될 수 있는 경우의 수를 구하는 것이기 때문에 (응모자아이디) C (불량 사용자 아이디) 중 가능한 것을 고르면 된다.
 
+<br/>
+
+## Problem5
+
+문제: 합승 택시 요금 (https://programmers.co.kr/learn/courses/30/lessons/72413)
+
+### Solution
+
+Step 1. 플로이드-워셜 알고리즘을 이용하여 풀었다.
+
+Step 2. S라는 노드에서 출발하여 특정노드(A or B의 집)를 거쳐서 가는 것이기 때문에 각 경로로 갈때의 최단 거리 값을 구해야 한다.
+
+Step 3. 
+
+<br/>
+
+## Problem6
+
+문제: 경주로 건설 (https://programmers.co.kr/learn/courses/30/lessons/67259)
+
+### Solution
+
+Step 1. 
+
+
 
 
 
