@@ -20,6 +20,7 @@ def solution(n, s, a, b, fares):
     print(cost_map)
     for i in range(1,n+1):
         cost = cost_map[s][i] + cost_map[i][a] + cost_map[i][b]
+        print(a,b)
         answer = min(answer,cost)
     return answer
 

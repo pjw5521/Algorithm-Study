@@ -42,6 +42,7 @@ def solution(game_board, table):
                 game_board_copy[i][j] = 2
                 result = dfs(game_board_copy, i, j, [0, 0], n, 0)[1:]
                 block.append(result)
+
     for r in range(4):
         table = rotate(table)
         table_rotate_copy = copy.deepcopy(table)
@@ -51,6 +52,7 @@ def solution(game_board, table):
                 if table_rotate_copy[i][j] == 1:
                     table_rotate_copy[i][j] = 2
                     result = dfs(table_rotate_copy, i, j, [0, 0], n, 1)[1:]
+                    print(result)
                     if result in block:
                         block.pop(block.index(result))
                         answer += (len(result) + 1)
