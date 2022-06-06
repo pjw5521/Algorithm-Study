@@ -114,6 +114,44 @@ Step 4. 하지만 만약에 벽인 경우도 고려하여 벽이거나 경주로
 <img width="181" alt="스크린샷 2022-05-23 오전 9 20 53" src="https://user-images.githubusercontent.com/60414900/169722776-ef1109c8-7596-4460-8213-c2a7e3bea237.png">
 
 
+<br/>
+
+## Problem8
+
+문제: 기둥과 보 설치 (https://programmers.co.kr/learn/courses/30/lessons/60061)
+
+### Solution
+
+Step 1. 보와 기둥 설치 조건 설정만 잘하면 된다.
+
+Step 2. 체크 함수를 넣어서 인자중에 frame을 빼고 반복무을 돌린다.
+
+Step 3. 규칙에 맞으면 continue, 이외는 false 처리
+
+Step 4. 복잡한 알고리즘은 아니지만 각 조건을 잘 처리해야 한다.
+
+<br/>
+
+## Problem10
+
+문제: 징검다리 건너기 (https://programmers.co.kr/learn/courses/30/lessons/64062)
+
+### Solution
+
+Step 1. answer을 증가시키며 징검다리 숫자를 -1 씩 한다. 그리고 내린 후의 연속된 0의 갯수가 k와 같으면 리턴 -> 효율성 틀림
+
+Step 2. 찾아본 결과 이분탐색을 이용해서 풀어야 한다.
+
+Step 3. 징검다리를 건너는 경우의 수를 해당 알고리즘 수행 시간 최대값으로 설정
+
+Step 4. 이분 탐색 실시
+
+Step 5. 각 원소에서 mid를 빼며 0이하면 count 를 증가시키고, 0보다 큰 원소가 있으면 count 초기화 진행
+
+Step 6. cnt가 k와 같거나 커지면 break 최대값인 right을 mid-1 로 바꾼다. 반대로 cnt가 k보다 작으면 left를 mid-1로 바꾼다.
+
+Step 7. left값 
+
 
 
 
