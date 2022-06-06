@@ -24,8 +24,10 @@ def solution(stones, k):
     right = 200000000
     while left <= right:
         temp = stones.copy()
+        # 이분 탐색
         mid = (left + right) // 2
         cnt = 0
+
         for t in temp:
             if t - mid <= 0:
                 cnt += 1
