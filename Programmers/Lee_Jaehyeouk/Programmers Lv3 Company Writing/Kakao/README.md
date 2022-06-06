@@ -116,6 +116,24 @@ Step 4. 하지만 만약에 벽인 경우도 고려하여 벽이거나 경주로
 
 <br/>
 
+## Problem7
+
+문제: 광고삽입 (https://programmers.co.kr/learn/courses/30/lessons/72414)
+
+### Solution
+
+Step 1. 동영상 재생시간을 초단위로 바꾼 뒤 초의 길이 만큼 배열 생성
+
+Step 2. 시청자들의 동영상 재생시간을 +1 로 배열에 표시
+
+Step 3. 누적 재생시간을 구한다.
+
+Step 4. 공익광고 재생시간을 고정 크기로하는 슬라이딩 윈도우를 해서 누적 재생시간이 가장 큰 구간을 구한다. -> 누적합 개념 중요
+
+Step 5. 가장 큰 구간이 여러 곳이라면 가장 빠른시간 return
+
+<br/>
+
 ## Problem8
 
 문제: 기둥과 보 설치 (https://programmers.co.kr/learn/courses/30/lessons/60061)
