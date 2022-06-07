@@ -18,21 +18,23 @@ def solution(play_time, adv_time, logs):
     # 1 동영상 전체 재생시간을 초로 바꾼 길이만큼의 배열 만들기
     dp = [0] * (str2int(play_time) + 1)
     adv_time = str2int(adv_time)
+    play_times = str2int(play_time)
 
     # 2 재생했던 구간 정보를 돌면서 시작점에 +1, 끝점에 -1
     for i in logs:
         temp = i.split('-')
         start = str2int(temp[0])
         end = str2int(temp[1])
+        print(start,end)
         dp[start] += 1
         dp[end] -= 1
 
     # 3 부분합 - 특정 초에 시청되는 인원 파악
-    for i in range(1, str2int(play_time)):
+    for i in range(1, play_times):
         dp[i] = dp[i] + dp[i - 1]
 
     # 4 부분합 - 누적 시청자 파악
-    for i in range(1, str2int(play_time)):
+    for i in range(1, play_times):
         dp[i] = dp[i] + dp[i - 1]
 
     # 5 누적합으로 가장 많이 시청한 인원 찾기 - 광고시간으로 슬라이딩 윈도우
@@ -40,7 +42,7 @@ def solution(play_time, adv_time, logs):
     max_time = 0
     cnt = 0
     cnt1 = 0
-    for i in range(adv_time - 1, str2int(play_time)):
+    for i in range(adv_time - 1, play_times):
         if i >= adv_time:
             if most_view < dp[i] - dp[i - adv_time]:
                 most_view = dp[i] - dp[i - adv_time]
@@ -49,7 +51,7 @@ def solution(play_time, adv_time, logs):
             if most_view < dp[i]:
                 most_view = dp[i]
                 max_time = i - adv_time + 1
-    print(cnt, cnt1)
+    #print(cnt, cnt1)
     return int2str(max_time)
 
 

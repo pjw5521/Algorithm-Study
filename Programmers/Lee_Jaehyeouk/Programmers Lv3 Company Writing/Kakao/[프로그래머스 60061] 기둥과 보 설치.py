@@ -25,6 +25,7 @@ def solution(n, build_frame):
 
     for f in build_frame:
         x, y, what, how = f
+        print(x,y,what,how)
 
         if how == 1:  # 설치
             answer.append([x, y, what])
