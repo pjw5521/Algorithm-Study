@@ -54,6 +54,7 @@ Step 4. queue 를 순회하며 위상정렬을 시행한다. q에서 꺼낼 때�
 
 Step 5. 진입 차수가 0이 되면 queue에 넣고 반복한다.
 
+<img width="315" alt="스크린샷 2022-06-14 오후 7 54 43" src="https://user-images.githubusercontent.com/60414900/173561490-b7fb12c0-68b0-4144-993e-dd1de1fdf3c7.png">
 
 
 <br/>
@@ -79,7 +80,7 @@ Step 3. dp[num][0]: 정점 번호가 index이고 자신이 얼리 어답터가 �
     dp[num][0] += dp[i][0]
 ```
 
-
+<img width="329" alt="스크린샷 2022-06-14 오후 7 54 26" src="https://user-images.githubusercontent.com/60414900/173561445-193fed85-b481-46a4-91e9-ba7b84830301.png">
 
 
 
