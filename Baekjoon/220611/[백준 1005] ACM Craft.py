@@ -1,37 +1,30 @@
 import sys
-from collections import defaultdict, deque
-
+from collections import deque
 input = sys.stdin.readline
 
-for _ in range(int(input())):
+t = int(input())
+for _ in range(t):
+    q = deque()
     n, k = map(int, input().split())
-
-    times = list(map(int, input().split()))
-    result = times[::]
-
-    indegree = [0] * n
-
-    arr = defaultdict(list)
-
+    time = [0] + list(map(int, input().split()))
+    dp = [0] * (n + 1)
+    indegree = [0] * (n + 1)
+    graph = [[] for _ in range(n+1)]
     for _ in range(k):
-        a, b = map(int, input().split())
-        arr[a - 1].append(b - 1)
-        indegree[b - 1] += 1
-
-    w = int(input()) - 1
-
-    queue = deque()
-    for i in range(n):
+        x, y = map(int, input().split())
+        graph[x].append(y)
+        indegree[y] += 1
+    w = int(input())
+    # 위상정렬
+    for i in range(1, n+1):
         if indegree[i] == 0:
-            queue.append(i)
-
-    while queue:
-        now = queue.popleft()
-        for i in arr[now]:
+            q.append(i)
+            dp[i] = time[i]
+    while q:
+        now = q.popleft()
+        for i in graph[now]:
             indegree[i] -= 1
-            result[i] = max(result[i], result[now] + times[i])
-            if indegree[i] == 0:
-                queue.append(i)
-                if i == w:
-                    break
-    print(result[w])
+            dp[i] = max(dp[i], dp[now] + time[i])
+            if indegree[i] == 0 :
+                q.append(i)
+    print(dp[w])
