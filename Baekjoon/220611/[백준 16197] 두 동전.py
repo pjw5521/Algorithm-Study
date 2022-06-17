@@ -45,6 +45,7 @@ def bfs(ar, ac, br, bc):
     return -1
 
 # main
+
 N, M = map(int, input().split())
 ar, ac, br, bc = 0, 0, 0, 0
 board = []
@@ -58,4 +59,6 @@ for i in range(N):
                 flag = False
             else:
                 br, bc = i, j
+print(board)
 print(bfs(ar, ac, br, bc))
+
