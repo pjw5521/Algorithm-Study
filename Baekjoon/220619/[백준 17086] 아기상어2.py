@@ -8,9 +8,9 @@ d = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (1, -1), (-1, 1), (1, 1)]
 q = deque()
 
 def bfs():
-    print(q)
     while q:
         qx, qy = q.popleft()
+        print(q,qx,qy)
 
         for dx, dy in d:
             x = qx + dx
@@ -24,7 +24,7 @@ def bfs():
                 graph[x][y] = graph[qx][qy] + 1
                 # 새로운 지점의 좌표를 큐에 삽입
                 q.append((x, y))
-        print(qx,qy,graph)
+    print(graph)
 
 # 상어의 위치에서부터 탐색 시작
 for i in range(n):
