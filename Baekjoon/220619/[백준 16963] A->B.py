@@ -3,6 +3,7 @@ a,b = map(int, input().split())
 cnt = 1
 
 while True:
+    print(a,b,cnt)
     if a == b:
         break
     elif a > b or (b % 10 != 1 and b % 2 != 0):

@@ -3,16 +3,15 @@ from collections import deque
 n, m = map(int, input().split())
 graph = [list(map(int, input().split())) for _ in range(n)]
 
-
 # 8가지 이동방향
 d = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (1, -1), (-1, 1), (1, 1)]
 q = deque()
-
 
 def bfs():
     print(q)
     while q:
         qx, qy = q.popleft()
+
         for dx, dy in d:
             x = qx + dx
             y = qy + dy
@@ -25,6 +24,7 @@ def bfs():
                 graph[x][y] = graph[qx][qy] + 1
                 # 새로운 지점의 좌표를 큐에 삽입
                 q.append((x, y))
+        print(qx,qy,graph)
 
 # 상어의 위치에서부터 탐색 시작
 for i in range(n):
